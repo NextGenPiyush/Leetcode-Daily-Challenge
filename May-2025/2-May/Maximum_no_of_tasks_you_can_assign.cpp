@@ -46,7 +46,7 @@ bool check(vector<int>& tasks, vector<int>& workers, int pills, int strength, in
         auto it = prev(st.end());  // last element of the st<nultiset>
 
         if(*it >= required) st.erase(it); // means maximum strength task assigned to the maximum strength worker 
-        else if(pillsUsed > pills) return false; // means on requirement we dont have any pills left 
+        else if(pillsUsed >= pills) return false; // means on requirement we dont have any pills left 
         else{
             // if we have to assign the pill to complete the task, then why not give it to the worker who can just do that task after taking pill rather than the stongest worker
             auto weakestWorkerIt = st.lower_bound(required - strength);  // O(logm)
