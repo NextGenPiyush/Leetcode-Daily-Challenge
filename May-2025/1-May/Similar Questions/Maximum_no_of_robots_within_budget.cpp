@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Problem Link: https://leetcode.com/problems/maximum-number-of-robots-within-budget/description/
+
 int maximumRobots(vector<int>& chargeTimes, vector<int>& runningCosts, long long budget); // Leetcode-2398
 bool check(vector<int>& chargeTimes, vector<long long>& prefixSum, long long budget, int k);
 
@@ -24,7 +26,7 @@ int maximumRobots(vector<int>& chargeTimes, vector<int>& runningCosts, long long
         int mid = low + (high-low)/2;
         if(check(chargeTimes, prefixSum, budget, mid)){  // O(n)
             result = mid;
-            low = mid+1;
+            low = mid+1;                // Total Time Complexity: O(n) + O(n*logn)
         }
         else high = mid-1;
     }
