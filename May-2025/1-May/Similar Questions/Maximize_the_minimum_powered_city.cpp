@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Problem Link: https://leetcode.com/problems/maximize-the-minimum-powered-city/description/
 long long maxPower(vector<int>& stations, int r, int k);  // Leetcode-2528
 bool isGood(vector<int> stations, int r, long long minPowerRequired, int additionalStations);
 

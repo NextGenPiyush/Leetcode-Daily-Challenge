@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Problem Link: https://leetcode.com/problems/maximum-running-time-of-n-computers/description/
 long long maxRunTime(int n, vector<int>& batteries);  // Leetcode-2141
 bool check(vector<int> &batteries, long long time, int n);
 

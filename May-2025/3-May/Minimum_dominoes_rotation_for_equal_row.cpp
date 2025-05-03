@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Problem Link: https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/description/?envType=daily-question&envId=2025-05-03
 int minDominoRotations(vector<int>& tops, vector<int>& bottoms); // Leetcode-1007
 
 int main(){

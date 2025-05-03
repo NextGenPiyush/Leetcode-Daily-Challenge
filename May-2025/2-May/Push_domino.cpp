@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// problem Link: https://leetcode.com/problems/push-dominoes/description/
 string pushDominoes(string dominoes); // Leetcode-838
 string func(int j, int k, string &dominoes);
 
