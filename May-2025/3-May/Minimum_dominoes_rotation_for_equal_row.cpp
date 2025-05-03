@@ -2,7 +2,6 @@
 using namespace std;
 
 int minDominoRotations(vector<int>& tops, vector<int>& bottoms); // Leetcode-1007
-int check(int x, vector<int>& A, vector<int>& B);
 
 int main(){
 
