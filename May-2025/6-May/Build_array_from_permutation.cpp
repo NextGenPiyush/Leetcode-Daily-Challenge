@@ -1,11 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Problem Link: https://leetcode.com/problems/build-array-from-permutation/?envType=daily-question&envId=2025-05-06
 vector<int> buildArray(vector<int>& nums); // Leetcode-1290
 
 int main(){
 
-    
+
 
     return 0;
 }
