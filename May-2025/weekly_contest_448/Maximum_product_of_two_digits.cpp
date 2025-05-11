@@ -7,7 +7,7 @@ int maxProduct(int n); // Leetcode-3536
 
 int main(){
 
-
+    // to get the maximum possible product we have multiplied the largest digits of the num
 
     return 0;
 }
