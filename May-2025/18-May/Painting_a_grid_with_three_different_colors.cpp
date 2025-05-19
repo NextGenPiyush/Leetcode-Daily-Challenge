@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Problem Link: https://leetcode.com/problems/painting-a-grid-with-three-different-colors/?envType=daily-question&envId=2025-05-18
 int mod = 1e9 + 7;
 vector<vector<int>> dp;
-unordered_map<string,string> t;
 
 int colorTheGrid(int m, int n); // Leetcode-1931
 void generateColumnState(string curr, char prevChar, int length, int rows, vector<string> &columnStates);
