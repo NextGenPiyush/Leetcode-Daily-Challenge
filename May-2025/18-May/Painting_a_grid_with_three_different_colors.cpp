@@ -90,7 +90,7 @@ int colorTheGrid(int m, int n){
     return solve(m, n, 0, 0, 0, 0);
 }
 
-int countWays(int &rows,int &cols,int currRow, int currCol ,int curr_state, int prev_state){
+int solve(int &rows,int &cols,int currRow, int currCol ,int curr_state, int prev_state){
     if(currCol == cols) return 1;   // Valid Painting Combination
 
     if(currRow == rows) return solve(rows, cols, 0, currCol + 1, 0, curr_state);  
