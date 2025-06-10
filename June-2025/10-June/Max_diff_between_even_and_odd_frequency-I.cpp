@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Problem Link: https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/editorial/?envType=daily-question&envId=2025-06-10
+
 int maxDifference(string s); // Leetcode-3442
 
 int main(){
