@@ -72,13 +72,14 @@ int findKthNumber(int n, int k){
     return curr;
 }
 
-int Count(int curr, int next, int n){  // O(log(n) to-base-10) as we are multiplying with 10 to reach the n
+int Count(long curr, long next, int n){  // O(log(n) to-base-10) as we are multiplying with 10 to reach the n
     int countNum = 0;
 
     while(curr <= n){
         countNum += (next - curr);  // counting lexicographical number between the curr and next number 
         curr *= 10; // moving to the next level
-        next = min(next*10, n+1);  // to handle the case whene there is no completion of the numbers at a paritcular level 
+        next = next*10;  
+        next = min(next, long(n+1)); // to handle the case whene there is no completion of the numbers at a paritcular level 
     }
 
     return countNum;
