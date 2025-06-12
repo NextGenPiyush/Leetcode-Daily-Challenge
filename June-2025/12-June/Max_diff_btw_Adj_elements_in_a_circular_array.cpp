@@ -14,7 +14,7 @@ int main(){
 
 int maxAdjacentDistance(vector<int>& nums){
     int n = nums.size();
-    int max_abb_diff = INT_MIN;
+    int max_abb_diff = INT_MIN;  // Time complexity: O(n) and space complexity: O(1)
 
     for(int i=0; i<n-1; i++) max_abb_diff = max(max_abb_diff, abs(nums[i] - nums[i+1]));
     max_abb_diff = max(max_abb_diff, abs(nums[0] - nums[n-1]));  // circular array 
