@@ -17,7 +17,7 @@ int maxDiff(int num){
     string min_string = to_string(num);
     string max_string = min_string;
 
-    auto replace = [](string& s, char x, char y){  // lamda function 
+    auto replace = [](string& s, char x, char y){  // lamda function for replacing all occurence of x to y 
         for(char& digit : s) if(digit == x) digit = y;
     };
 
